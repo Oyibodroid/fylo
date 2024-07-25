@@ -1,0 +1,545 @@
+:root {
+  /**Primary**/
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /** Accent**/
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /**Neutral**/
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+  --slight-black: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 5vw;
+}
+
+#logo {
+  width: 8rem;
+}
+
+#logo img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--slight-black);
+}
+
+#links a {
+  margin: 0 .5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding: 3vh 5vw;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: var(--slight-black);
+  font-size: 1.8em;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--slight-black);
+  line-height: 1.5;
+}
+
+.top-img {
+  width: 100vw;
+}
+
+.top-img img {
+  width: 100%;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 12px 2em;
+  border: none;
+  background-color: var(--Bright-Blue);
+  color: white;
+  font-family: "Raleway";
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+input {
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  border-radius: 2px;
+  color: #333;
+}
+
+#emailA {
+  width: 60%;
+  border: 1px solid #333;
+}
+
+.body-sect {
+  display: flex;
+  margin: 20vh 0 0;
+  padding: 5rem 3rem;
+  gap: 2rem;
+  background-color: var(--Light-Grayish-Blue);
+  position: relative;
+}
+
+#curve {
+  width: 100%;
+  top: -7%;
+  right: 0;
+  position: absolute;
+  z-index: -333;
+  display: none;
+}
+
+#curve-desktop {
+  width: 100%;
+  top: -8%;
+  right: 0;
+  position: absolute;
+  z-index: -333;
+}
+
+.body-img {
+  width: 70vw;
+}
+
+.body-img img {
+  width: 100%;
+}
+
+.body-cnt p {
+  margin-top: 1rem;
+}
+
+.body-cnt a {
+  padding: 1rem 0 0;
+  width: fit-content;
+  position: relative;
+  color: var(--Moderate-Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.body-cnt a img {
+  margin-left: 1em;
+}
+
+
+.body-cnt a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--Moderate-Cyan);
+  bottom: 0;
+}
+
+.testimonial {
+  background: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 20rem;
+  text-align: left;
+  box-shadow: 6px 3px 12px rgba(138, 138, 138, 0.26);
+}
+
+div.testimonial>img {
+  margin-bottom: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.profile img {
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#name {
+  font-size: .7rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+p.post {
+  font-size: .5rem;
+}
+
+#access {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--Desaturated-Blue);
+  padding: 18vh 5vw;
+}
+
+.access-cnt {
+  width: 30vw;
+}
+
+.access-cnt h2 {
+  color: white;
+  margin: 0 0 1rem;
+  font-family: 'Raleway';
+}
+
+.access-cnt p {
+  color: white;
+}
+
+#access-email {
+  display: block;
+  margin: 0 0 .4rem;
+  width: 25rem;
+  padding: .5rem;
+  word-wrap: break-word;
+}
+
+footer {
+  background: var(--Very-Dark-Blue);
+  color: white;
+  padding: 5rem 3rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 2rem 0 0;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row a {
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+#chatimg {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 10%;
+  background: var(--Bright-Blue);
+  border-radius: 50%;
+  z-index: 104444;
+  cursor: pointer;
+}
+
+#chaticon {
+  position: relative;
+  transform: translate(27%, -34%);
+  z-index: -104444;
+}
+
+#chaticon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  box-shadow: 0 0 0 10px rgba(112, 193, 247, 0.5);
+  bottom: 0%;
+  left: 0%;
+  animation: ripple 3s infinite;
+  animation-delay: -.5s;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+#chaticon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  /* background: #e4e4e4; */
+  box-shadow: 0 0 0 10px rgba(112, 193, 247, 0.5);
+  bottom: 0%;
+  left: 0%;
+  animation: ripple 3s infinite;
+  animation-delay: -.1s;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+
+#chatimg svg {
+  width: 100%;
+  padding: .5rem;
+  transform: translate(-27%, 37%);
+}
+
+#chatimg span {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background: crimson;
+  color: white;
+  font-size: 13px;
+  padding: .1rem .4rem;
+  border-radius: 50%;
+}
+
+#chatbox {
+  width: 20rem;
+  height: 25rem;
+  /* display: none; */
+  background: url("./images/doddle.jpg") rgba(0, 12, 31, 0.623);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 30%;
+  opacity: 0;
+  padding: 1rem;
+  z-index: 111;
+  right: -5rem;
+  transition: ease right 1s;
+}
+
+#chatbox.show {
+  /* display: block; */
+  transition: ease bottom 1s;
+  right: 1rem;
+  opacity: 1;
+}
+
+#chatbox::-webkit-scrollbar,
+#usertext::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+#chatbox::-webkit-scrollbar-track,
+#usertext::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+#chatbox::-webkit-scrollbar-thumb,
+#usertext::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+#chatbox::-webkit-scrollbar-thumb:hover,
+#usertext::-webkit-scrollbar-thumb:hover {
+  background: rgba(129, 129, 129, 0.863);
+}
+
+#chatbox input {
+  font-size: 14px;
+}
+
+#send {
+  padding: .4rem;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.userinput form {
+  display: flex;
+  position: fixed;
+  width: 20rem;
+  bottom: 30%;
+  right: 11rem;
+  z-index: 2222;
+  transform: translate(50%, 0%);
+  gap: .1rem;
+}
+
+.msg {
+  width: 60%;
+  margin-bottom: .4rem;
+  padding: .4rem;
+  font-size: 14px;
+}
+
+.botmsg {
+  border-radius: 8px 8px 0;
+  background: white;
+}
+
+.botmsg p {
+  color: #333;
+  line-height: 1.2;
+}
+
+.usermsg {
+  background: rgba(0, 124, 206, 0.562);
+  margin-left: auto;
+}
+
+.usermsg p {
+  color: white;
+  width: 100%;
+  word-break: break-all;
+}
+
+#usertext {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  resize: none;
+  padding: .2rem;
+  outline: none;
+}
+
+
+@media(max-width: 700px) {
+
+  p,
+  a {
+    font-size: .9em;
+  }
+
+  .top {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .form>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #emailA {
+    width: 100%;
+  }
+
+  .body-sect {
+    flex-direction: column-reverse;
+    padding: 3rem 1rem;
+    text-align: center !important;
+    align-items: center;
+  }
+
+  .body-img {
+    width: 100vw;
+  }
+
+  #curve {
+    display: block;
+  }
+
+  #curve-desktop {
+    display: none;
+  }
+
+  #access {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .access-cnt {
+    width: 100%;
+  }
+
+  #form2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  #access-email {
+    width: 100%;
+  }
+
+  .testimonial {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  #logo {
+    width: 5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media(max-width: 445px) {
+  #curve {
+    top: -4%;
+  }
+
+  #chatbox.show {
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+  }
+
+  #userinput {
+    bottom: 0;
+    right: 50%;
+    width: 100vw;
+  }
+}
+
+
+@keyframes ripple {
+  70% {
+    -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
